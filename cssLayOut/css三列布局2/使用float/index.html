@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>使用float实现三列布局</title>
+	<style type="text/css">
+	#left{
+		width: 200px;
+		height: 300px;
+		background-color: yellow;
+		float: left;
+	}
+	#right{
+		width: 200px;
+		height: 300px;
+		float: right;
+		background-color: blue;
+	}
+	#center{
+		height: 300px;
+		background-color: pink;
+		margin-left: 200px;
+		margin-right: 200px;
+	}
+	</style>
+</head>
+<!-- 此方法使用float实现三列布局，原理为：分别使用float:left和float:right对左右进行布局。
+使两个脱离文档流。中间元素正常显示在文档流，使用margin对左右宽度进行设定。 -->
+<body>
+<div id="left"></div>
+<div id="right"></div>
+<div id="center"></div>
+</body>
+</html>

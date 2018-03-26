@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>双飞翼布局</title>
+	<!-- 前面的float定位以及利用margin为负值排到同一行与圣杯布局一致。
+	但是圣杯布局给父元素设置padding然后再对左右元素设置position:relative会引起最小高度的问题。
+	双飞翼解决了这一缺陷。
+	通过给main元素的文本用一个标签括起来，对这一标签进行定位，给文本的margin设置对应的左右元素的宽度值从而实现中间内容的自适应。 -->
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	header,footer{
+		text-align: center;
+		background-color: lightgray;
+	}
+	#bg{
+		overflow: hidden;
+		/*padding: 0 200px 0 200px;*/
+	}
+	#main{
+		width: 100%;
+		height: 200px;
+		background-color: lightgreen;
+		float: left;
+	}
+	#left{
+		width: 200px;
+		height: 200px;
+		background-color: lightpink;
+		float: left;
+		margin-left: -100%;
+		/*position: relative;
+		left: -200px;*/
+	}
+	#right{
+		width: 300px;
+		height: 200px;
+		background-color: lightpink;
+		float: left;
+		margin-left: -300px;
+		/*position: relative;
+		left: 300px;*/
+	}
+	#main-content{
+		margin: 0 300px 0 200px;
+	}
+	</style>
+</head>
+<body>
+	<header>双飞翼布局</header>
+	<div id="bg">
+		<div id="main">
+			<div id="main-content">main</div>
+		</div>
+		<div id="left"></div>
+		<div id="right"></div>
+	</div>
+	<footer>底部</footer>
+</body>
+</html>

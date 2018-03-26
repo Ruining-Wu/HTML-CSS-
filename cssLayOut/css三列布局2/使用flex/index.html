@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>使用Flex</title>
+	<style type="text/css">
+	#main{
+		display: flex;
+	}
+	#left{
+		width: 200px;
+		height: 200px;
+		background-color: lightpink;
+
+	}
+	#right{
+		width: 200px;
+		height: 200px;
+		background-color: lightpink;
+	}
+	#center{
+		background-color: lightblue;
+		flex:1;
+	}
+	</style>
+</head>
+<!-- 此方法使用CSS3新特性Flex盒布局模型进行布局。
+需要在外层设置一个div，设置display:flex
+对中间元素设置flex:1 
+注意：左中右必须按顺序排列-->
+<body>
+	<div id="main">
+		<div id="left"></div>
+		<div id="center"></div>
+		<div id="right"></div>
+	</div>
+
+</body>
+</html>

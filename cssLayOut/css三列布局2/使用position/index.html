@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>三列布局</title>
+	<meta charset="utf-8">
+</head>
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+#left{
+	width: 300px;
+	height: 300px;
+	background-color: #999;
+	position: absolute;
+}
+#right{
+	width: 300px;
+	height: 300px;
+	background-color: #666;
+	position: absolute;
+	right: 0;
+}
+#center{
+	background-color: pink;
+	margin-left: 300px;
+	margin-right: 300px;
+	height: 300px;
+}
+/*本方法采用：position绝对定位的方法。将左右两边使用absolute绝对定位，使其脱离文档流，
+后面的center会自动流到上面。然后使用margin属性，使其留出左右两边宽度的值，
+便可实现中间宽度自适应*/
+</style>
+<body>
+<h3>本练习使用css实现三列布局（两边宽度固定，中间自适应）</h3>
+<div id="left">Left</div>
+<div id="right">Right</div>
+<div id="center">Center</div>
+</body>
+</html>

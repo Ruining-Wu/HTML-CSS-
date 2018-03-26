@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定位和居中问题</title>
+	<style type="text/css">
+	/*使用text-align:center和vertical-align:middle的方式对元素垂直居中*/
+		/*.bg{
+			display: table-cell;
+			width: 1200px;
+			height: 600px;
+			background-color: blue;
+			vertical-align: middle;
+			text-align: center;
+		}*/
+		/*.main{
+			width: 400px;
+			height: 200px;
+			background-color: #ccc;
+			display: inline-block;
+		}*/
+		/*使用定位*/
+		/*.bg{
+			position: relative;
+			width: 1200px;
+			height: 600px;
+		}*/
+		/*.main{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			background-color: #ccc;
+			width: 400px;
+			height: 200px;
+			/*transform: tranplate(-50%,-50%);
+		}*/
+		.bg{
+			display: flex;
+			justify-content:center;
+			align-items:center;
+			background-color: #ccc;
+		}
+		.main{
+			width: 400px;
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="bg">
+		<div class="main">999999
+		</div>
+	</div>
+	
+</body>
+</html>
