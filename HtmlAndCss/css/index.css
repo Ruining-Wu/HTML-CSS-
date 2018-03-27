@@ -1,0 +1,161 @@
+body{
+	font-family: "黑体";
+	font-size: 14px;
+	margin: 0;
+	border: 0;
+	background-color: #DEDEDE;
+	min-width: 750px;
+}
+.header{
+	height: 70px;
+	width: 100%;
+	background-color: #333333;
+	display: table;
+	vertical-align: middle;
+}
+.header span{
+	height: 70px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.header span img{
+	margin-left: 35px;
+	cursor: pointer;
+}
+nav ul{
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+nav ul li{
+	float: left;
+	margin-right: 20px;
+	line-height: 70px;
+}
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+nav ul li a:hover{
+	color: gray;
+}
+aside{
+	background-color: #fff;
+	width: 350px;
+	margin-top: 40px;
+	margin-right: 20px;
+	float: right;
+	padding: 20px;
+	box-shadow: 2px 2px 2px #848484;
+
+}
+.aside{
+	padding-left: 10px;
+	border-left: 3px #ccc solid;
+}
+.input_message{
+	display: inline-block;
+	text-align: right;
+	margin-right: 10px;
+	width: 30%;
+	margin-top: 15px;
+	vertical-align: top;
+	margin-bottom: 0px;
+}
+.input_messages{
+	display: inline-block;
+	width: 30%;
+	text-align: right;
+	margin-right: 10px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+.bot{
+	vertical-align: bottom;
+}
+.demand{
+	font-size: 13px;
+	color: gray;
+	margin-top: 10px;
+	margin-left: 34.5%;
+}
+textarea{
+	width: 52%;
+	margin-top: 10px;
+	height: 100px;
+	margin-left: -2px;
+
+}
+input[type='submit']{
+	width: 100%;
+	height: 40px;
+	background-color: #3355D0;
+	color: #fff;
+	margin-top: 10px;
+	border-radius: 10px;
+	font-weight: 60px;
+	cursor: pointer;
+	border: 1px solid #3355D0;
+}
+article{
+	background-color: #fff;
+	margin-right: 450px;
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-bottom: 20px;
+	box-shadow: 2px 2px 2px #848484;
+	padding: 20px;
+	line-height: 1.5;
+}
+.color-gray{
+	color: gray;
+}
+.text_indent{
+	text-indent: 2em;
+}
+.no-list{
+	list-style-type: none;
+}
+figure{
+	height: 120px;
+	width: 140px;
+	border: 1px solid #aaa;
+	text-align: center;
+	padding-bottom:20px;
+	display: inline-block;
+	margin-bottom: 20px; 
+}
+figcaption{
+	padding: 5px;
+}
+ol>li{
+	font-weight: bold;
+}
+table{
+	width: 100%;
+	/*margin: 0 auto;*/
+	border-color: #ccc;
+	border-collapse: collapse;
+}
+thead{
+	background-color: #333;
+	color: white;
+}
+#tab{
+	font-size: 14px;
+}
+tfoot{
+	background-color: #ccc;
+	font-weight: bold;
+}
+footer{
+	width: 100%;
+	height: 60px;
+	background: #000;
+	text-align: center;
+	line-height: 4.5
+}
+footer>span{
+	color: white;
+	/*line-height: 60px;*/
+}
